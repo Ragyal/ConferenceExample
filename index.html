@@ -12,7 +12,7 @@
         <script>
             var connection = new RTCMultiConnection();
 
-            // this line is VERY_important
+            //this line is VERY_important
             connection.socketURL = 'https://rtcmulticonnection.herokuapp.com:443/';
 
             var desktopConstraints = connection.mediaConstraints = {
@@ -60,10 +60,10 @@
                     
                     connection.openOrJoin('ExampleConference');
 
-                    /*connection.sdpConstraints.mandatory = {
+                    /*
+                    connection.sdpConstraints.mandatory = {
                         OfferToReceiveAudio: true,
                         OfferToReceiveVideo: true,
-
                     };*/
                     }, function (err) {});
             } else {
